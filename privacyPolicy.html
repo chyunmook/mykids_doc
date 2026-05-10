@@ -21,65 +21,41 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-size: 15px;
-      line-height: 1.75;
-      color: #1a1a1a;
+      line-height: 1.8;
+      color: #222;
       background: #f9f9f9;
     }
 
     .wrap {
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
       padding: 48px 24px 80px;
       background: #fff;
     }
 
-    header { margin-bottom: 40px; border-bottom: 2px solid #2196F3; padding-bottom: 20px; }
-    header h1 { font-size: 22px; font-weight: 700; color: #2196F3; }
-    header p  { margin-top: 6px; font-size: 13px; color: #666; }
+    header { margin-bottom: 36px; border-bottom: 2px solid #2196F3; padding-bottom: 16px; }
+    header h1 { font-size: 20px; font-weight: 700; color: #2196F3; }
+    header p  { margin-top: 4px; font-size: 13px; color: #888; }
 
     h2 {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
-      margin: 36px 0 10px;
-      color: #111;
+      margin: 32px 0 8px;
       padding-left: 10px;
       border-left: 3px solid #2196F3;
+      color: #111;
     }
 
-    p  { margin-bottom: 10px; color: #333; }
-    ul { padding-left: 20px; margin-bottom: 10px; color: #333; }
-    li { margin-bottom: 4px; }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 12px 0 18px;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px 12px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th { background: #f0f7ff; font-weight: 600; color: #2196F3; }
-
-    .notice {
-      background: #fff8e1;
-      border-left: 3px solid #FFC107;
-      padding: 12px 16px;
-      margin: 16px 0;
-      font-size: 14px;
-      color: #555;
-      border-radius: 0 6px 6px 0;
-    }
+    p  { margin-bottom: 8px; color: #444; }
+    ul { padding-left: 18px; margin-bottom: 8px; color: #444; }
+    li { margin-bottom: 3px; }
 
     footer {
-      margin-top: 60px;
-      padding-top: 20px;
+      margin-top: 56px;
+      padding-top: 16px;
       border-top: 1px solid #eee;
       font-size: 13px;
-      color: #888;
+      color: #aaa;
     }
     footer a { color: #2196F3; text-decoration: none; }
   </style>
@@ -92,156 +68,38 @@
     <p>mykids | 시행일: 2026년 05월 10일</p>
   </header>
 
-  <p>
-    mykids 개발자(이하 "운영자")는 <strong>mykids</strong> 서비스(이하 "서비스") 이용자의 개인정보를
-    「개인정보 보호법」 제30조에 따라 아래와 같이 처리합니다.
-  </p>
+  <p>mykids 운영자(이하 "운영자")는 이용자의 개인정보를 아래와 같이 처리합니다.</p>
 
-  <!-- 1 -->
-  <h2>1. 수집하는 개인정보 항목 및 수집 방법</h2>
-  <table>
-    <thead>
-      <tr><th>구분</th><th>수집 항목</th><th>수집 목적</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>회원가입</td>
-        <td>이메일 주소, 이름(닉네임), 역할(부모/자녀)</td>
-        <td>계정 생성 및 본인 확인</td>
-      </tr>
-      <tr>
-        <td>위치 정보</td>
-        <td>GPS 좌표(위도·경도), 이동 속도, 방향</td>
-        <td>가족 간 실시간 위치 공유</td>
-      </tr>
-      <tr>
-        <td>기기 정보</td>
-        <td>배터리 잔량, FCM 토큰(푸시 알림용)</td>
-        <td>배터리 모니터링, 알림 전송</td>
-      </tr>
-      <tr>
-        <td>서비스 이용 기록</td>
-        <td>채팅 메시지, 사진, 경유지 설정</td>
-        <td>가족 소통 기능 제공</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>수집 방법: 서비스 이용 중 이용자가 직접 입력하거나 기기로부터 자동 수집</p>
-
-  <!-- 2 -->
-  <h2>2. 개인정보의 처리 목적</h2>
+  <h2>1. 수집하는 개인정보</h2>
   <ul>
-    <li>가족 구성원 간 실시간 위치 공유 서비스 제공</li>
+    <li>이메일 주소, 이름(닉네임)</li>
+    <li>GPS 위치 정보(위도·경도)</li>
+    <li>기기 배터리 잔량, 푸시 알림 토큰</li>
+    <li>가족 간 채팅 메시지, 사진</li>
+  </ul>
+
+  <h2>2. 수집 목적</h2>
+  <ul>
+    <li>가족 구성원 간 실시간 위치 공유</li>
     <li>경유지 도착·이탈 알림 발송</li>
-    <li>가족 채팅 및 사진 공유 기능 제공</li>
-    <li>배터리 잔량 모니터링 정보 표시</li>
-    <li>서비스 장애 대응, 고객 문의 처리</li>
+    <li>가족 채팅 및 사진 공유</li>
   </ul>
 
-  <!-- 3 -->
-  <h2>3. 개인정보의 보유 및 이용 기간</h2>
-  <table>
-    <thead>
-      <tr><th>항목</th><th>보유 기간</th><th>근거</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>계정 정보, 위치 기록</td>
-        <td>회원 탈퇴 시까지</td>
-        <td>서비스 제공 계약</td>
-      </tr>
-      <tr>
-        <td>채팅 메시지, 사진</td>
-        <td>회원 탈퇴 시까지 (삭제 요청 시 즉시)</td>
-        <td>서비스 제공 계약</td>
-      </tr>
-      <tr>
-        <td>소비자 분쟁 기록</td>
-        <td>3년</td>
-        <td>전자상거래법</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="notice">
-    위치 정보는 가족 구성원 간 공유 목적으로만 사용되며,
-    이용자가 탈퇴하거나 가족 연결을 해제하면 즉시 삭제됩니다.
-  </div>
+  <h2>3. 보유 기간</h2>
+  <p>회원 탈퇴 시 즉시 삭제합니다.</p>
 
-  <!-- 4 -->
-  <h2>4. 개인정보의 제3자 제공</h2>
-  <p>운영자는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다.</p>
-  <p>단, 아래의 경우는 예외입니다.</p>
-  <ul>
-    <li>이용자가 사전에 동의한 경우 (가족 구성원 간 위치 공유 등)</li>
-    <li>법령에 의하여 요구되는 경우</li>
-  </ul>
+  <h2>4. 제3자 제공 및 처리 위탁</h2>
+  <p>위치 정보는 연결된 가족 구성원에게만 공유됩니다. 그 외 제3자에게 제공하지 않습니다.</p>
+  <p>데이터 저장·인증·알림 인프라는 Google Firebase를 통해 처리됩니다.</p>
 
-  <!-- 5 -->
-  <h2>5. 개인정보 처리 위탁</h2>
-  <table>
-    <thead>
-      <tr><th>수탁 업체</th><th>위탁 업무</th><th>보유 기간</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Google LLC (Firebase)</td>
-        <td>데이터 저장·인증·푸시 알림 인프라 제공</td>
-        <td>서비스 이용 기간</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>Firebase는 Google의 보안 정책에 따라 데이터를 암호화하여 보관합니다.</p>
+  <h2>5. 이용자 권리</h2>
+  <p>언제든지 앱 내 설정에서 위치 공유를 중지하거나, 아래 이메일로 계정 삭제 및 데이터 삭제를 요청할 수 있습니다.</p>
 
-  <!-- 6 -->
-  <h2>6. 위치정보의 수집·이용·제공에 관한 사항</h2>
-  <ul>
-    <li>위치 정보는 서비스 내 가족 구성원에게만 공유되며 제3자에게 제공되지 않습니다.</li>
-    <li>자녀 기기의 위치는 연결된 부모 계정에게만 표시됩니다.</li>
-    <li>위치 수집은 이용자가 앱 내 설정에서 언제든지 중지할 수 있습니다.</li>
-    <li>백그라운드 위치 수집은 이동 중일 때만 활성화되며, 정지 상태에서는 자동으로 절전 모드로 전환됩니다.</li>
-  </ul>
-
-  <!-- 7 -->
-  <h2>7. 개인정보의 파기</h2>
-  <p>운영자는 개인정보 보유 기간이 경과하거나 처리 목적이 달성된 경우 지체 없이 파기합니다.</p>
-  <ul>
-    <li>전자적 파일: 복구 불가능한 기술적 방법으로 삭제</li>
-    <li>탈퇴 즉시: 계정 정보, 위치 기록, 채팅 메시지 파기</li>
-  </ul>
-
-  <!-- 8 -->
-  <h2>8. 이용자의 권리</h2>
-  <p>이용자는 언제든지 아래 권리를 행사할 수 있습니다.</p>
-  <ul>
-    <li>본인 개인정보 열람 요청</li>
-    <li>개인정보 수정·삭제 요청</li>
-    <li>개인정보 처리 정지 요청</li>
-    <li>위치 정보 수집 중지 (앱 설정 또는 이메일 요청)</li>
-  </ul>
-  <p>권리 행사는 아래 개인정보 보호책임자에게 이메일로 요청하시면 7일 이내 처리합니다.</p>
-
-  <!-- 9 -->
-  <h2>9. 개인정보 보호책임자</h2>
-  <table>
-    <thead>
-      <tr><th>항목</th><th>내용</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>성명</td><td>조현묵</td></tr>
-      <tr><td>이메일</td><td><a data-email href="#">이메일 로딩 중...</a></td></tr>
-    </tbody>
-  </table>
-
-  <!-- 10 -->
-  <h2>10. 개인정보처리방침 변경</h2>
-  <p>
-    본 방침은 법령·서비스 변경에 따라 수시로 개정될 수 있습니다.
-    변경 시 앱 내 공지 또는 이메일로 사전 안내합니다.
-  </p>
+  <h2>6. 문의</h2>
+  <p>개인정보 관련 문의: <a data-email href="#">이메일 로딩 중...</a></p>
 
   <footer>
-    <p>시행일: 2026년 05월 10일 &nbsp;|&nbsp;
-    문의: <a data-email href="#">이메일 로딩 중...</a></p>
+    <p>시행일: 2026년 05월 10일 &nbsp;|&nbsp; 문의: <a data-email href="#">이메일 로딩 중...</a></p>
   </footer>
 
 </div>

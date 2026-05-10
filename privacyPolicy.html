@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>개인정보처리방침 — mykids</title>
+  <script>
+    // ✏️ 이메일 주소 변경 시 여기 한 곳만 수정하세요.
+    const CONTACT_EMAIL = 'chohyunmook@naver.com';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('[data-email]').forEach(el => {
+        el.textContent = CONTACT_EMAIL;
+        el.href = 'mailto:' + CONTACT_EMAIL;
+      });
+    });
+  </script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -78,11 +89,11 @@
 
   <header>
     <h1>개인정보처리방침</h1>
-    <p>mykids | 시행일: 2026년 05월 10일 | 운영사: 3top</p>
+    <p>mykids | 시행일: 2026년 05월 10일</p>
   </header>
 
   <p>
-    3top(이하 "회사")은 <strong>mykids</strong> 서비스(이하 "서비스") 이용자의 개인정보를
+    mykids 개발자(이하 "운영자")는 <strong>mykids</strong> 서비스(이하 "서비스") 이용자의 개인정보를
     「개인정보 보호법」 제30조에 따라 아래와 같이 처리합니다.
   </p>
 
@@ -158,7 +169,7 @@
 
   <!-- 4 -->
   <h2>4. 개인정보의 제3자 제공</h2>
-  <p>회사는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다.</p>
+  <p>운영자는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다.</p>
   <p>단, 아래의 경우는 예외입니다.</p>
   <ul>
     <li>이용자가 사전에 동의한 경우 (가족 구성원 간 위치 공유 등)</li>
@@ -192,7 +203,7 @@
 
   <!-- 7 -->
   <h2>7. 개인정보의 파기</h2>
-  <p>회사는 개인정보 보유 기간이 경과하거나 처리 목적이 달성된 경우 지체 없이 파기합니다.</p>
+  <p>운영자는 개인정보 보유 기간이 경과하거나 처리 목적이 달성된 경우 지체 없이 파기합니다.</p>
   <ul>
     <li>전자적 파일: 복구 불가능한 기술적 방법으로 삭제</li>
     <li>탈퇴 즉시: 계정 정보, 위치 기록, 채팅 메시지 파기</li>
@@ -217,8 +228,7 @@
     </thead>
     <tbody>
       <tr><td>성명</td><td>조현묵</td></tr>
-      <tr><td>소속</td><td>3top</td></tr>
-      <tr><td>이메일</td><td><a href="mailto:chm@3top.co.kr">chm@3top.co.kr</a></td></tr>
+      <tr><td>이메일</td><td><a data-email href="#">이메일 로딩 중...</a></td></tr>
     </tbody>
   </table>
 
@@ -230,8 +240,8 @@
   </p>
 
   <footer>
-    <p>시행일: 2026년 05월 10일 &nbsp;|&nbsp; 운영사: 3top &nbsp;|&nbsp;
-    문의: <a href="mailto:chm@3top.co.kr">chm@3top.co.kr</a></p>
+    <p>시행일: 2026년 05월 10일 &nbsp;|&nbsp;
+    문의: <a data-email href="#">이메일 로딩 중...</a></p>
   </footer>
 
 </div>

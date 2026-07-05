@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서비스 이용약관 — mykids</title>
+  <script>
+    // ✏️ 이메일 주소 변경 시 여기 한 곳만 수정하세요.
+    const CONTACT_EMAIL = 'dev@mykiwi.chm.kr';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('[data-email]').forEach(el => {
+        el.textContent = CONTACT_EMAIL;
+        el.href = 'mailto:' + CONTACT_EMAIL;
+      });
+    });
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #222;
+      background: #f9f9f9;
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      background: #fff;
+    }
+
+    header { margin-bottom: 36px; border-bottom: 2px solid #2196F3; padding-bottom: 16px; }
+    header h1 { font-size: 20px; font-weight: 700; color: #2196F3; }
+    header p  { margin-top: 4px; font-size: 13px; color: #888; }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 32px 0 8px;
+      padding-left: 10px;
+      border-left: 3px solid #2196F3;
+      color: #111;
+    }
+
+    p  { margin-bottom: 8px; color: #444; }
+    ul { padding-left: 18px; margin-bottom: 8px; color: #444; }
+    li { margin-bottom: 3px; }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #aaa;
+    }
+    footer a { color: #2196F3; text-decoration: none; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>서비스 이용약관</h1>
+    <p>mykids | 시행일: 2026년 07월 06일</p>
+  </header>
+
+  <h2>제1조 (목적)</h2>
+  <p>이 약관은 mykids 운영자(이하 "운영자")가 제공하는 가족 위치 공유 서비스 "마이키위"(이하 "서비스")의 이용과 관련하여 운영자와 이용자의 권리·의무 및 책임사항을 정함을 목적으로 합니다.</p>
+
+  <h2>제2조 (서비스의 내용)</h2>
+  <ul>
+    <li>가족 구성원 간 실시간 위치 공유</li>
+    <li>경유지(안심존) 도착·이탈 알림</li>
+    <li>가족 간 채팅 및 사진 공유</li>
+    <li>자녀의 긴급 SOS 알림 전송</li>
+    <li>그 밖에 운영자가 추가로 개발하거나 제휴를 통해 제공하는 서비스</li>
+  </ul>
+
+  <h2>제3조 (회원가입 및 계정)</h2>
+  <p>이용자는 이메일 또는 구글·애플·카카오 소셜 로그인을 통해 회원가입을 할 수 있습니다. 만 14세 미만 아동이 "자녀" 역할로 서비스를 이용하는 경우, 법정대리인(부모)이 계정 생성 및 가족 연결을 진행하고 그 이용에 대해 책임을 집니다.</p>
+  <p>이용자는 가입 시 등록한 정보를 최신 상태로 유지해야 하며, 계정 정보의 관리 소홀로 발생한 불이익에 대해 운영자는 책임을 지지 않습니다.</p>
+
+  <h2>제4조 (위치 정보 및 개인정보)</h2>
+  <p>서비스 이용을 위해 위치 정보, 배터리 잔량 등 개인정보 수집이 필요하며, 구체적인 수집 항목·목적·보유 기간은 별도의 <a href="privacyPolicy.html">개인정보처리방침</a>에 따릅니다.</p>
+  <p>위치 정보는 가족 그룹으로 연결된 구성원에게만 공유되며, 운영자는 이용자의 동의 없이 이를 제3자에게 제공하거나 광고 목적으로 사용하지 않습니다.</p>
+
+  <h2>제5조 (이용자의 의무)</h2>
+  <ul>
+    <li>타인의 계정을 도용하거나 허위 정보로 가입하는 행위 금지</li>
+    <li>서비스를 이용해 타인을 위협·감시·희롱하는 등 본래 목적(가족 안전)을 벗어난 용도로 악용하는 행위 금지</li>
+    <li>서비스의 정상적인 운영을 방해하는 행위(비정상적인 요청, 리버스 엔지니어링 등) 금지</li>
+    <li>채팅·사진 공유 기능을 통해 불법 정보, 음란물, 타인의 권리를 침해하는 콘텐츠를 게시하는 행위 금지</li>
+  </ul>
+  <p>이용자가 위 의무를 위반한 경우 운영자는 사전 통지 없이 서비스 이용을 제한하거나 계정을 정지할 수 있습니다.</p>
+
+  <h2>제6조 (SOS 및 위치 공유 기능의 한계)</h2>
+  <p>SOS 알림, 위치 공유, 안심존 알림 등은 가족 구성원 간 편의를 위한 보조 기능이며, 119 등 공식 긴급 구조 체계를 대체하지 않습니다. 기기의 네트워크 상태, GPS 정밀도, OS 정책(백그라운드 제한 등)에 따라 알림이 지연되거나 전달되지 않을 수 있으며, 운영자는 이로 인해 발생한 손해에 대해 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.</p>
+
+  <h2>제7조 (서비스의 변경 및 중단)</h2>
+  <p>운영자는 서비스의 전부 또는 일부를 개선, 변경하거나 운영상·기술상 필요에 따라 중단할 수 있으며, 이 경우 사전에 앱 내 공지 또는 이용자에게 통지된 방법으로 안내합니다. 다만 긴급한 보안 문제 등 부득이한 경우 사후에 통지할 수 있습니다.</p>
+
+  <h2>제8조 (계정 탈퇴 및 이용 제한)</h2>
+  <p>이용자는 앱 내 설정에서 언제든지 계정 탈퇴를 진행할 수 있으며, 탈퇴 시 계정·프로필·가족 연결·위치 정보가 개인정보처리방침에 따라 삭제됩니다. 운영자는 이용자가 이 약관 또는 관계 법령을 위반한 경우 사전 통지 후(긴급한 경우 사후 통지) 이용계약을 해지하거나 이용을 제한할 수 있습니다.</p>
+
+  <h2>제9조 (면책조항)</h2>
+  <p>운영자는 천재지변, 기간통신사업자의 서비스 중지, 이용자 기기·네트워크 환경 등 운영자가 통제할 수 없는 사유로 발생한 서비스 장애에 대해 책임을 지지 않습니다. 이용자 상호간 또는 이용자와 제3자 간에 서비스를 매개로 발생한 분쟁에 대해서도 운영자는 개입할 의무가 없으며, 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.</p>
+
+  <h2>제10조 (약관의 변경)</h2>
+  <p>운영자는 관계 법령을 위반하지 않는 범위에서 이 약관을 개정할 수 있으며, 개정 시 적용일자 및 개정사유를 명시하여 앱 내 공지 또는 이 페이지를 통해 최소 7일 전(이용자에게 불리한 변경은 30일 전) 공지합니다. 이용자가 공지 이후에도 서비스를 계속 이용하는 경우 개정 약관에 동의한 것으로 봅니다.</p>
+
+  <h2>제11조 (문의)</h2>
+  <p>운영 주체: mykids 운영자</p>
+  <p>서비스 관련 문의: <a data-email href="#">이메일 로딩 중...</a></p>
+
+  <footer>
+    <p>시행일: 2026년 07월 06일 &nbsp;|&nbsp; 문의: <a data-email href="#">이메일 로딩 중...</a></p>
+    <p><a href="privacyPolicy.html">개인정보처리방침 보기</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
